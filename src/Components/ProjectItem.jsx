@@ -9,7 +9,11 @@ const animationVariant = {
     opacity: 1,
     transition: { duration: 1.6 },
   },
-  hidden: { x: -100, opacity: 0 },
+  hidden: {
+    x: -100,
+    opacity: 0,
+    transition: { duration: 2 },
+  },
 };
 
 const ProjectItem = (props) => {
