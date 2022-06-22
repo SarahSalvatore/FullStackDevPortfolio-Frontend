@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
-import Navbar from "../Components/Navbar";
 
 const Error = () => {
   return (
     <Fragment>
-      <Navbar />
+      <h1>This is the error page</h1>
     </Fragment>
   );
 };

@@ -10,9 +10,9 @@ const animationVariant = {
     transition: { duration: 1.6 },
   },
   hidden: {
-    x: -100,
+    x: -200,
     opacity: 0,
-    transition: { duration: 2 },
+    transition: { duration: 1.8 },
   },
 };
 
@@ -23,8 +23,6 @@ const ProjectItem = (props) => {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-    } else {
-      controls.start("hidden");
     }
   }, [controls, inView]);
 

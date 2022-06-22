@@ -235,12 +235,90 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   height: 100vh;
   margin: 0 auto;
+  padding-top: 3rem;
   width: 100%;
 }
 
 .hero__text {
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.side-hero-icons {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  padding-top: 7rem;
+  width: 20%;
+}
+
+.hero-icon {
+  align-self: center;
+  height: 60px;
+  -webkit-animation: bounce 3s infinite alternate;
+  -moz-animation: bounce 3s infinite alternate;
+  animation: bounce 4s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes bounce {
+  to {
+    -moz-transform: scale(1.4);
+  }
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.5);
+  }
+}
+
+#light .hero-icon {
+  opacity: 0.4;
+}
+
+#light .hero-icon:hover {
+  opacity: 1;
+}
+
+#dark .hero-icon {
+  opacity: 0.5;
+}
+
+#dark .hero-icon:hover {
+  opacity: 0.8;
+}
+
+#node,
+#git {
+  align-self: flex-end;
+}
+
+#html,
+#css {
+  align-self: flex-start;
+}
+
+#react {
+  height: 67px;
+}
+
+#node {
+  height: 50px;
+}
+
+.hero__text.ogcopy {
   width: 100%;
   position: absolute;
   text-align: center;
@@ -297,24 +375,6 @@ button {
   margin-top: 3.8rem;
   padding: 1.4rem 4rem;
   transition: 0.3s;
-  -webkit-animation: bounce 1.2s infinite alternate;
-  -moz-animation: bounce 1.2s infinite alternate;
-  animation: bounce 1.2s infinite alternate;
-}
-@-webkit-keyframes bounce {
-  to {
-    -webkit-transform: scale(1.1);
-  }
-}
-@-moz-keyframes bounce {
-  to {
-    -moz-transform: scale(1.1);
-  }
-}
-@keyframes bounce {
-  to {
-    transform: scale(1.1);
-  }
 }
 
 #light .hero-button {
