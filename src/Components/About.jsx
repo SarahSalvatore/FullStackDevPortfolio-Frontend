@@ -1,17 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import profilePhoto from "../Assets/Images/sarah-photo.jpg";
+import AnchorButton from "./AnchorButton";
 
 const About = () => {
   return (
     <section className="about__section" id="about">
       <div className="about__container">
-        <div className="sarahpic__container">
-          <img
-            className="profile__image"
-            src={profilePhoto}
-            alt="Profile Photo of Sarah Salvatore"
-          />
-        </div>
+        <img
+          className="profile__image"
+          src={profilePhoto}
+          alt="Profile of Sarah Salvatore"
+        />
         <div className="about__text">
           <h3 id="about-link" className="sm-section-header">
             Intro
@@ -23,7 +23,7 @@ const About = () => {
             Ontario. If you're looking for a creative and passionate developer,
             then you've come to the right place!
           </p>
-          <p>
+          <p className="about-paragraph">
             I studied Full Stack Development at York University with a focus on
             the MERN stack. Before that, I graduated from George Brown College
             for Graphic Design which has definitely come in handy when working
@@ -32,23 +32,25 @@ const About = () => {
             latest and greatest languages and syntax. Below you can learn more
             about me, see samples of my work or get in touch.
           </p>
-          <a href="" download className="resume-button">
+
+          <Link
+            to="./SSalvatoreResume.txt"
+            target="_blank"
+            className="resume-button"
+            download
+          >
             Download CV
-          </a>
-          <a
+          </Link>
+          <AnchorButton
             href="https://www.linkedin.com/in/sarah-salvatore-75345b22a"
-            target="_blank"
-            className="linkedin-button"
-          >
-            LinkedIn
-          </a>
-          <a
+            className="med-blue-button"
+            name="LinkedIn"
+          />
+          <AnchorButton
             href="https://github.com/SarahSalvatore"
-            target="_blank"
-            className="github-button"
-          >
-            Github
-          </a>
+            className="dark-blue-button"
+            name="GitHub"
+          />
         </div>
       </div>
     </section>

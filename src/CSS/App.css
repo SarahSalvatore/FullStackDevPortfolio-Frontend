@@ -8,14 +8,11 @@
 :root {
   --white: white;
   --black: black;
-  --blue: #160028;
   --periwinkle: #9cc1e8;
   --bright-blue: #0288d1;
   --dark-blue: #061c34;
   --blue-black: #04080e;
   --mid-blue: #00364c;
-  --body-text: #1c1d1d;
-  --dark-blue: #061c34;
   --gray-background: #ecedee;
   --gray-text: #9a9da0;
   --mid-blue-accent: #06477e;
@@ -52,9 +49,17 @@ h2 {
 }
 
 h4 {
-  color: var(--body-text);
+  font-weight: 600;
+}
+
+#light h4 {
+  color: var(--mid-blue-accent);
   font-size: 2.1rem;
-  margin-bottom: 3rem;
+}
+
+#dark h4 {
+  color: var(--periwinkle);
+  font-size: 2.1rem;
 }
 
 p,
@@ -81,20 +86,64 @@ textarea {
   height: 110px;
 }
 
-/* NAVIGATION BAR */
+/* NAVIGATION BARS */
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* small nav */
+
+#light .small-nav {
+  background-color: var(--blue-black);
+}
+
+#dark .small-nav {
+  background-color: var(--mid-blue-accent);
+}
+
+.small-nav-items {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-name {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 400;
+  justify-content: flex-start;
+  letter-spacing: 0.2rem;
+  padding: 1rem 0 1rem 2.5rem;
+}
+
+.social-icons {
+  color: var(--white);
+  height: 18px;
+  margin-right: 2rem;
+}
+
+#light .social-icons:hover {
+  color: var(--periwinkle);
+}
+
+#dark .social-icons:hover {
+  color: plum;
+}
+
+/* large nav */
 
 .logo {
   width: 80px;
-  margin: 1rem 0 1rem 2rem;
+  margin: 0.5rem 0 0.5rem 2rem;
 }
 
 .navbar {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
 }
 
 #light .navbar {
@@ -235,7 +284,9 @@ button {
   font-weight: 500;
 }
 
-.transparent-button {
+/* hero button on hero banner */
+
+.hero-button {
   background-color: var(--dark-blue);
   border: none;
   border-radius: 6px;
@@ -266,21 +317,23 @@ button {
   }
 }
 
-#light .transparent-button {
+#light .hero-button {
   background-color: var(--dark-blue);
 }
 
-.transparent-button:hover {
+.hero-button:hover {
   color: tomato;
 }
 
-#dark .transparent-button {
+#dark .hero-button {
   background-color: var(--blue-black);
 }
 
+/* about section buttons */
+
 .resume-button,
-.linkedin-button,
-.github-button {
+.med-blue-button,
+.dark-blue-button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -298,36 +351,43 @@ button {
 }
 
 .resume-button:hover,
-.linkedin-button:hover,
-.github-button:hover {
-  background-color: var(--dark-blue);
-  color: var(--pink);
+.med-blue-button:hover,
+.dark-blue-button:hover {
+  color: tomato;
 }
 
 .resume-button {
   background-color: #1a78c8;
 }
 
-.linkedin-button {
+.med-blue-button {
   background-color: var(--mid-blue-accent);
 }
 
-#light .github-button {
+#light .dark-blue-button {
   background-color: var(--dark-blue);
 }
 
-#dark .github-button {
-  background-color: var(--blue-black);
+#dark .dark-blue-button {
+  background-color: #040a60;
 }
+
+.button-icon {
+  color: white;
+  height: 20px;
+}
+
+/* contact section buttons */
 
 .submit-button {
   background-color: var(--mid-blue-accent);
   border: none;
   border-radius: 5px;
-  color: var(--light-text);
+  color: var(--white);
   cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
   margin-top: 1rem;
   padding: 1.1rem 0;
   width: 30%;
@@ -335,8 +395,8 @@ button {
 }
 
 .submit-button:hover {
-  background-color: var(--dark-blue-accent);
-  color: var(--pink);
+  background-color: var(--blue-black);
+  color: tomato;
 }
 
 .badge {
@@ -349,11 +409,12 @@ button {
   padding: 1rem;
 }
 
-.section-title {
-  background: -webkit-linear-gradient(plum, var(--bright-blue));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+#light .section-title {
+  color: var(--mid-blue-accent);
+}
+
+#dark .section-title {
+  color: var(--periwinkle);
 }
 
 /* ABOUT ME SECTION */
@@ -366,7 +427,7 @@ button {
 
 .about__container {
   display: flex;
-  padding: 7rem 0;
+  padding: 6rem 0;
 }
 
 .sm-section-header {
@@ -385,25 +446,32 @@ button {
   color: var(--white);
 }
 
-.sarahpic__container {
-  display: flex;
-}
-
 .profile__image {
   align-self: center;
   margin-right: 6rem;
 }
 
-.linkedin-logo {
-  margin-top: 1.4rem;
-  width: 32px;
+.about-paragraph {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.button-banner {
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 /* PROJECTS SECTION */
 
 .projects__section {
   width: 65%;
-  margin: 7rem auto 0;
+  margin: 0 auto;
+  padding-top: 7rem;
 }
 
 .project__card {
@@ -414,6 +482,7 @@ button {
 
 .project__preview {
   width: 50%;
+  margin-bottom: 5rem;
 }
 
 .project__desc {
@@ -421,26 +490,71 @@ button {
   width: 50%;
 }
 
+.stack-text {
+  color: mediumvioletred;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.stack-para {
+  margin-top: 1.8rem;
+}
+
+.project-desc-para {
+  margin-top: 1.8rem;
+}
+
 .project__image {
-  cursor: pointer;
   width: 100%;
 }
 
-.project__image:hover {
-  background-color: var(--pink);
-  opacity: 0.5;
+.projects-map {
+  margin-top: 6rem;
 }
 
 /* CONTACT ME AND FORM */
 
-.contact__section {
+#light .contact__section {
   background-color: var(--gray-background);
 }
 
 .contact__container {
   width: 65%;
-  margin: auto;
-  padding: 5rem 0 7rem;
+  margin: 5rem auto 0;
+  padding: 6rem 0 7rem;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 3rem 4rem 4rem;
+  width: 80%;
+}
+
+.form-flex {
+  display: flex;
+  margin-top: 4rem;
+}
+
+form label {
+  color: black;
+}
+
+.contact-text {
+  margin-top: 0;
+  padding-right: 6rem;
+}
+
+.contact-detail-text {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1;
+  margin-bottom: 1.5rem;
+}
+
+#dark .contact-detail-text {
+  color: var(--white);
 }
 
 .contact__container,
@@ -450,16 +564,22 @@ button {
 }
 
 .contact-icon {
-  width: 42px;
+  height: 20px;
   margin: 2rem 1.5rem 0 0;
 }
 
-.input {
-  margin: 1rem 0;
+.checkbox-container {
+  text-align: center;
 }
 
-.input:focus {
-  outline: 0;
+.contact-check {
+  color: var(--mid-blue-accent);
+  height: 40px;
+  margin-top: 2rem;
+}
+
+#light .contact-icon {
+  color: var(--mid-blue-accent);
 }
 
 .input-control .error {
@@ -477,27 +597,20 @@ button {
   box-sizing: border-box;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   font-size: 1.6rem;
-  margin: 20rem, 0;
   padding: 1rem;
   width: 100%;
 }
 
-.thankyou__container {
-  background-color: var(--white);
-  margin: auto;
-  padding: 5rem;
-}
-
-.thankyou__message {
-  color: var(--bright-blue);
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 4rem;
+.submission-text {
+  color: var(--black);
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.6;
   text-align: center;
 }
 
-.thankyou__container p {
-  text-align: center;
+#dark .submission-text {
+  color: var(--black);
 }
 
 /* FOOTER SECTION */
@@ -518,7 +631,7 @@ button {
 }
 
 .footer__section ul {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   line-height: 2.2rem;
@@ -526,16 +639,25 @@ button {
   padding: 0.8px 20px;
 }
 
-.footer__section ul li a {
+.footer-link {
   color: var(--white);
+  display: block;
   text-decoration: none;
   transition: 0.5s;
 }
 
-.footer-link {
+.footer-social-icons {
   color: var(--white);
-  text-decoration: none;
-  transition: 0.5s;
+  height: 22px;
+  margin-right: 2rem;
+}
+
+#light .footer-social-icons:hover {
+  color: var(--periwinkle);
+}
+
+#dark .footer-social-icons:hover {
+  color: plum;
 }
 
 /* MEDIA QUERIES */

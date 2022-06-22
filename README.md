@@ -41,7 +41,7 @@ In Backend folder:
 
 ## Contributions
 
-Contributions and forks are always welcome! If you have a suggestion that would make my portfolio better, please feel free to fork the repo and create a pull request. Don't forget to give the project a star!
+Contributions and forks are always welcome! If you have a suggestion that would make my portfolio better, please feel free to fork the repo and create a pull request. Don't forget to give the project a star on GitHub!
 
 ## Contact
 
@@ -49,7 +49,7 @@ Please find my contact details below. Feel free to reach out anytime and I will 
 
 - Email: sarah.h.salvatore@gmail.com
 - Linkedin: [https://www.linkedin.com/in/sarah-salvatore-full-stack-developer/](https://www.linkedin.com/in/sarah-salvatore-full-stack-developer/)
-- Github: [https://github.com/SarahSalvatore](https://github.com/SarahSalvatore)
+- GitHub: [https://github.com/SarahSalvatore](https://github.com/SarahSalvatore)
 
 ## Acknowledgements
 

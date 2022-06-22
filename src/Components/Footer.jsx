@@ -1,39 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import NavLinks from "./NavbarLinks";
+import SocialLinks from "./SocialLinks";
 import logo from "../Assets/Images/logo.png";
 
 const Footer = () => {
   return (
     <footer className="footer__section">
       <ul>
-        <li>
-          <a href="#" id="home-nav">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#about-link" id="about-nav">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#projects-link" id="projects-nav">
-            Projects
-          </a>
-        </li>
-        <Link to="/blog" target="_blank" className="footer-link" id="blog-nav">
-          Blog
-        </Link>
-        <li>
-          <a href="#contact-link" id="contact-nav">
-            Contact
-          </a>
-        </li>
+        <NavLinks className="footer-link" />
       </ul>
-      <p>This site has been designed and built by Sarah Salvatore.</p>
-      <a href="#">
+      <div className="footer-icon-container">
+        <SocialLinks className="footer-social-icons" />
+      </div>
+      <HashLink to="#">
         <img className="logo" src={logo} alt="Logo for Sarah Salvatore" />
-      </a>
+      </HashLink>
     </footer>
   );
 };
