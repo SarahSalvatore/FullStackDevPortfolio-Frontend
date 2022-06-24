@@ -16,7 +16,7 @@ const SocialLinks = (props) => {
       <a
         href="https://www.linkedin.com/in/sarah-salvatore-full-stack-developer/"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon
           icon={faLinkedin}
@@ -27,7 +27,7 @@ const SocialLinks = (props) => {
       <a
         href="https://github.com/SarahSalvatore"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon
           icon={faGithub}

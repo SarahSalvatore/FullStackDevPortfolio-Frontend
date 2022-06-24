@@ -13,7 +13,7 @@ const Navbar = (props) => {
         <HashLink to="#">
           <img className="logo" src={logo} alt="Logo for Sarah Salvatore" />
         </HashLink>
-        <div class="nav-links">
+        <div className="nav-links">
           <NavLinks className="nav-item" />
           <label className="toggle-text">{props.label}:</label>
         </div>
@@ -21,10 +21,10 @@ const Navbar = (props) => {
           onChange={props.onToggleChange}
           checked={props.checked}
         />
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div className="hamburger">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
         </div>
       </div>
     </nav>

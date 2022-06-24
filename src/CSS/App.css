@@ -72,13 +72,11 @@ label {
   text-justify: inter-word;
 }
 
-#light p,
-label {
+#light p {
   color: var(--black);
 }
 
-#dark p,
-label {
+#dark p {
   color: var(--white);
 }
 
@@ -263,29 +261,11 @@ nav {
 
 .hero-icon {
   align-self: center;
-  height: 60px;
-  -webkit-animation: bounce 3s infinite alternate;
-  -moz-animation: bounce 3s infinite alternate;
-  animation: bounce 4s infinite alternate;
-}
-@-webkit-keyframes bounce {
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-@-moz-keyframes bounce {
-  to {
-    -moz-transform: scale(1.4);
-  }
-}
-@keyframes bounce {
-  to {
-    transform: scale(1.5);
-  }
+  height: 50px;
 }
 
 #light .hero-icon {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 #light .hero-icon:hover {
@@ -293,7 +273,7 @@ nav {
 }
 
 #dark .hero-icon {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 #dark .hero-icon:hover {
@@ -311,11 +291,11 @@ nav {
 }
 
 #react {
-  height: 67px;
+  height: 57px;
 }
 
 #node {
-  height: 50px;
+  height: 40px;
 }
 
 .hero__text.ogcopy {
@@ -375,6 +355,24 @@ button {
   margin-top: 3.8rem;
   padding: 1.4rem 4rem;
   transition: 0.3s;
+  -webkit-animation: bounce 2s infinite alternate;
+  -moz-animation: bounce 2s infinite alternate;
+  animation: bounce 2s infinite alternate;
+}
+@-webkit-keyframes bounce {
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes bounce {
+  to {
+    -moz-transform: scale(1.2);
+  }
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.1);
+  }
 }
 
 #light .hero-button {
@@ -546,7 +544,7 @@ button {
 }
 
 .project__desc {
-  padding: 0 4rem;
+  padding-left: 4rem;
   width: 50%;
 }
 
@@ -587,30 +585,13 @@ button {
 .form-container {
   background-color: white;
   border-radius: 8px;
-  padding: 3rem 4rem 4rem;
-  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 5rem 4rem;
+  width: 70%;
 }
 
 .form-flex {
-  display: flex;
-  margin-top: 4rem;
-}
-
-form label {
-  color: black;
-}
-
-.contact-text {
-  margin-top: 0;
-  padding-right: 6rem;
-}
-
-.contact-detail-text {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 500;
-  letter-spacing: 0.1;
-  margin-bottom: 1.5rem;
+  margin: 5rem auto;
 }
 
 #dark .contact-detail-text {
@@ -642,28 +623,28 @@ form label {
   color: var(--mid-blue-accent);
 }
 
-.input-control .error {
-  color: #b8405e;
+.input-control {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
-#username,
-#email,
-#messagebox {
+#nameEntry,
+#emailEntry,
+#messageEntry {
   border: 0;
   border-radius: 0.5rem;
   box-sizing: border-box;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 1rem;
   width: 100%;
 }
 
 .submission-text {
   color: var(--black);
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
@@ -718,6 +699,46 @@ form label {
 
 #dark .footer-social-icons:hover {
   color: plum;
+}
+
+/* LOGIN PAGE */
+
+.login-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.login-title {
+  color: var(--mid-blue-accent);
+  font-size: 3rem;
+  text-align: center;
+  margin: 5rem auto 3rem;
+}
+
+.login-container {
+  background: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  width: 35%;
+  margin: 0 auto;
+  padding: 6rem 8rem;
+}
+
+#username,
+#password {
+  border: 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  font-size: 1.8rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 /* MEDIA QUERIES */

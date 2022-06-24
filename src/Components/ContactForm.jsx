@@ -1,26 +1,48 @@
 import React from "react";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
   return (
     <div className="form-container">
-      <form id="form" action="/">
+      <form id="form" onSubmit={props.onSubmit}>
         <div className="input-control">
-          <label for="username">Name:</label>
-          <input id="username" name="username" type="text" />
-          <div className="error"></div>
+          <label>Name:</label>
+          <input
+            id="nameEntry"
+            name="name"
+            type="name"
+            value={props.nameValue}
+            required
+            onChange={props.nameOnChange}
+          />
         </div>
         <div className="input-control">
-          <label for="email">Email:</label>
-          <input id="email" name="email" type="text" />
-          <div className="error"></div>
+          <label>Email:</label>
+          <input
+            id="emailEntry"
+            name="email"
+            type="email"
+            value={props.emailValue}
+            required
+            onChange={props.emailOnChange}
+          />
         </div>
         <div className="input-control">
-          <label for="messagebox">Message:</label>
-          <textarea id="messagebox" name="messagebox" type="text"></textarea>
-          <div className="error"></div>
+          <label>Message:</label>
+          <input
+            id="messageEntry"
+            name="text"
+            type="textarea"
+            value={props.messageValue}
+            required
+            onChange={props.messageOnChange}
+          />
         </div>
 
-        <button className="submit-button" type="submit">
+        <button
+          className="submit-button"
+          type="submit"
+          onClick={props.onButtonClick}
+        >
           Submit
         </button>
       </form>
