@@ -8,7 +8,7 @@ const Login = () => {
       className="login-section"
       style={{ backgroundImage: `url('${loginbackground}')` }}
     >
-      <h2 className="login-title">Login</h2>
+      <h2 className="page-header-title">Login</h2>
       <div className="login-container">
         <form id="login-form">
           <div className="input-control">
