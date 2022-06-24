@@ -26,6 +26,15 @@ const useForm = (submitForm) => {
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && successForm) {
       submitForm(true);
+
+      const body = { formValue };
+      fetch("/contact_form/entries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      }).then(() => {
+        console.log("New contact form entry added.");
+      });
     }
   }, [formErrors]);
 
