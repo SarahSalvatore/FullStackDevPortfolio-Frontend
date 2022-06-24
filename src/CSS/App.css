@@ -158,7 +158,6 @@ nav {
 
 .nav-links .nav-item {
   color: var(--white);
-  display: inline-block;
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -192,37 +191,50 @@ nav {
   color: tomato;
 }
 
-/* LIGHT/DARK TOGGLE */
-
-.switch {
+.hamburger-button {
+  border: none;
+  cursor: pointer;
   margin-right: 2rem;
 }
 
+.hamburger-icon {
+  border: none;
+  color: var(--white);
+  height: 30px;
+}
+
+#light .hamburger-icon,
+.hamburger-button {
+  background-color: var(--dark-blue);
+}
+
+#dark .hamburger-icon,
+.hamburger-button {
+  background-color: var(--blue-black);
+}
+
+/* LIGHT/DARK TOGGLE */
+
+.color-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4rem;
+}
+
 .toggle-text {
-  display: inline-block;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  margin-left: 5rem;
-  margin-right: 1rem;
   color: var(--white);
+  margin-right: 1rem;
 }
 
 /* HAMBURGER */
 
-.hamburger {
+.hamburger-button {
   display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px 25px 0 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  background-color: var(--white);
 }
 
 /* HERO CONTAINER AND TEXT */
@@ -725,7 +737,6 @@ button {
 /* ERROR PAGE */
 
 .error-container {
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -744,6 +755,8 @@ button {
 
 .error-header-title {
   color: var(--white);
+  font-size: 4rem;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -756,13 +769,12 @@ button {
 }
 
 .error-link {
-  color: var(--periwinkle);
+  color: var(--white);
   cursor: pointer;
   font-size: 3rem;
   font-weight: 600;
   line-height: 2;
   margin: 0 auto;
-  text-decoration: none;
 }
 
 /* MEDIA QUERIES */
@@ -853,16 +865,38 @@ button {
 }
 
 @media only screen and (max-width: 850px) {
-  .nav-item {
-    opacity: 0;
-  }
-
   .nav-links {
     display: none;
   }
 
-  .switch {
-    opacity: 0;
+  #hamburger-links {
+    position: absolute;
+    top: 118px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    height: auto;
+    width: 100%;
+  }
+
+  #light #hamburger-links {
+    background-color: var(--dark-blue);
+  }
+
+  #dark #hamburger-links {
+    background-color: var(--blue-black);
+  }
+
+  #hamburger-links .nav-item {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .hamburger-button {
+    display: flex;
   }
 
   .hero__container {
@@ -874,10 +908,6 @@ button {
     height: 280px;
     width: 400px;
     margin-top: 0;
-  }
-
-  .hamburger {
-    display: block;
   }
 }
 
@@ -904,6 +934,16 @@ button {
 
   .submit-button {
     width: 50%;
+  }
+
+  .error-container {
+    padding-top: 5rem;
+  }
+
+  .error-text-container {
+    margin-top: 5rem;
+    margin-bottom: 0;
+    width: 80%;
   }
 }
 

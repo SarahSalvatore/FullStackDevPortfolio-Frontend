@@ -5,15 +5,30 @@ import { HashLink } from "react-router-hash-link";
 const NavLinks = (props) => {
   return (
     <Fragment>
-      <HashLink to="#" className={props.className} id="home-nav">
+      <HashLink
+        to="#"
+        className={props.className}
+        id="home-nav"
+        onClick={props.onClick}
+      >
         Home
       </HashLink>
 
-      <HashLink to="#about" className={props.className} id="about-nav">
+      <HashLink
+        to="#about"
+        className={props.className}
+        id="about-nav"
+        onClick={props.onClick}
+      >
         About
       </HashLink>
 
-      <HashLink to="#projects" className={props.className} id="projects-nav">
+      <HashLink
+        to="#projects"
+        className={props.className}
+        id="projects-nav"
+        onClick={props.onClick}
+      >
         Projects
       </HashLink>
 
@@ -22,11 +37,17 @@ const NavLinks = (props) => {
         target="_blank"
         className={props.className}
         id="blog-nav"
+        onClick={props.onClick}
       >
         Blog
       </Link>
 
-      <HashLink to="#contact" className={props.className} id="contact-nav">
+      <HashLink
+        to="#contact"
+        className={props.className}
+        id="contact-nav"
+        onClick={props.onClick}
+      >
         Contact
       </HashLink>
 
@@ -35,6 +56,7 @@ const NavLinks = (props) => {
         target="_blank"
         className={props.className}
         id="login-nav"
+        onClick={props.onClick}
       >
         Login
       </Link>
