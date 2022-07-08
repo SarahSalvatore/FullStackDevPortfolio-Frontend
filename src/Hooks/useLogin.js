@@ -27,7 +27,7 @@ const useLogin = (submitForm) => {
     if (Object.keys(loginErrors).length === 0 && successLogin) {
       submitForm(true);
 
-      fetch("/contact_form/entries")
+      fetch("http://localhost:5000/contact_form/entries")
         .then((res) => {
           return res.json();
         })

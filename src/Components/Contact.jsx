@@ -15,7 +15,7 @@ const Contact = () => {
         <h3 id="contact-link" className="sm-section-header">
           Connect
         </h3>
-        <h2 className="section-title">Get in Touch</h2>
+        <h2 className="section-title">Contact Me</h2>
         <div className="form-flex">
           {!formSubmission ? (
             <ContactForm submitForm={submitForm} />

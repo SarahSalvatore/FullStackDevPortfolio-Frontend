@@ -12,13 +12,13 @@ const animationVariant = {
   hidden: {
     x: -200,
     opacity: 0,
-    transition: { duration: 1.8 },
+    transition: { duration: 1.6 },
   },
 };
 
 const ProjectItem = (props) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.3 });
+  const [ref, inView] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {

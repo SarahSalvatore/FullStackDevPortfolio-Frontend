@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import EntryItem from "./EntryItem";
 
 const Entries = () => {
-  const [entries, setEntries] = useState([]);
+  const [entries, setEntries] = useState();
 
-  const contactFormEntries = [...entries];
+  const contactFormEntries = [entries];
 
   useEffect(() => {
     fetch("/contact_form/entries")
