@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import profilePhoto from "../Assets/Images/sarah-photo.jpg";
 import AnchorButton from "./AnchorButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
@@ -39,17 +42,24 @@ const About = () => {
             className="resume-button"
             download
           >
+            <FontAwesomeIcon
+              icon={faArrowDown}
+              className="button-icon"
+              title="Email Me"
+            />
             Download CV
           </Link>
           <AnchorButton
             href="https://www.linkedin.com/in/sarah-salvatore-75345b22a"
             className="med-blue-button"
             name="LinkedIn"
+            icon={faLinkedin}
           />
           <AnchorButton
             href="https://github.com/SarahSalvatore"
             className="dark-blue-button"
             name="GitHub"
+            icon={faGithub}
           />
         </div>
       </div>

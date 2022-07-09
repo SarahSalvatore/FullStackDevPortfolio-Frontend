@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnchorButton from "./AnchorButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDisplay, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const animationVariant = {
   visible: {
@@ -44,11 +46,13 @@ const ProjectItem = (props) => {
           href={props.demoHref}
           className="med-blue-button"
           name="Demo"
+          icon={faDisplay}
         />
         <AnchorButton
           href={props.codeHref}
           className="dark-blue-button"
           name="Code"
+          icon={faCode}
         />
       </div>
     </motion.article>
