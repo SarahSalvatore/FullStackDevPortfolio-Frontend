@@ -21,18 +21,17 @@ const About = () => {
           </h3>
           <h2 className="section-title">About Me</h2>
           <p>
-            Welcome to my little corner of the internet! My name is Sarah
-            Salvatore and I'm a Full Stack Developer based out of Toronto,
+            Hello and welcome to my little corner of the internet! My name is
+            Sarah Salvatore and I'm a Full Stack Developer based out of Toronto,
             Ontario. If you're looking for a creative and passionate developer,
             then you've come to the right place!
           </p>
           <p className="about-paragraph">
             I studied Full Stack Development at York University with a focus on
             the MERN stack. Before that, I graduated from George Brown College
-            for Graphic Design which has definitely come in handy when working
-            on Front-End Development. I consider myself a forever student, eager
-            to build on my foundational knowledge and stay in tune with the
-            latest and greatest languages and syntax. Below you can learn more
+            for Graphic Design. I consider myself a forever student, eager to
+            build on my foundational knowledge, hone my skills, and continue
+            learning new languages and frameworks. Below you can learn more
             about me, see samples of my work or get in touch.
           </p>
 

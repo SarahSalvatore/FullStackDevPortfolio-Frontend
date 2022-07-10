@@ -6,6 +6,7 @@ import reactLogo from "../Assets/Images/react-logo.png";
 import nodeLogo from "../Assets/Images/node-logo.png";
 import expressLogo from "../Assets/Images/express-logo.png";
 import mongoLogo from "../Assets/Images/mongo-logo.png";
+import mySqlLogo from "../Assets/Images/mysql-logo.png";
 import gitLogo from "../Assets/Images/git-logo.png";
 
 const Skills = () => {
@@ -18,9 +19,9 @@ const Skills = () => {
           className="skill-logo"
           src={htmlLogo}
           alt="HTML Icon"
-          title="HTML5"
+          title="HTML"
         />
-        <img className="skill-logo" src={cssLogo} alt="CSS Icon" title="CSS3" />
+        <img className="skill-logo" src={cssLogo} alt="CSS Icon" title="CSS" />
         <img
           className="skill-logo"
           src={javascriptLogo}
@@ -50,6 +51,12 @@ const Skills = () => {
           src={expressLogo}
           alt="Express Icon"
           title="Express"
+        />
+        <img
+          className="skill-logo"
+          src={mySqlLogo}
+          alt="MySQL Icon"
+          title="MySQL"
         />
         <img className="skill-logo" src={gitLogo} alt="Git Icon" title="Git" />
       </div>

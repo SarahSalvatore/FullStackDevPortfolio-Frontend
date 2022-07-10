@@ -1,5 +1,8 @@
 import React from "react";
+import SocialLinks from "./SocialLinks";
 import useForm from "../Hooks/useForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const ContactForm = ({ submitForm }) => {
   const {
@@ -13,7 +16,7 @@ const ContactForm = ({ submitForm }) => {
     <div className="form-container">
       <form id="form">
         <div className="input-control">
-          <label className="input-label" for="nameEntry">
+          <label className="input-label" htmlFor="nameEntry">
             Name:
           </label>
           <input
@@ -29,7 +32,7 @@ const ContactForm = ({ submitForm }) => {
           )}
         </div>
         <div className="input-control">
-          <label className="input-label" for="emailEntry">
+          <label className="input-label" htmlFor="emailEntry">
             Email:
           </label>
           <input
@@ -45,7 +48,7 @@ const ContactForm = ({ submitForm }) => {
           )}
         </div>
         <div className="input-control">
-          <label className="input-label" for="messageEntry">
+          <label className="input-label" htmlFor="messageEntry">
             Message:
           </label>
           <input
@@ -62,13 +65,17 @@ const ContactForm = ({ submitForm }) => {
         </div>
 
         <button
-          className="submit-button"
+          className="dark-blue-button"
           type="submit"
           onClick={handleFormSubmission}
         >
+          <FontAwesomeIcon icon={faPaperPlane} className="button-icon" />
           Submit
         </button>
       </form>
+      <div className="contact-socials">
+        <SocialLinks className="contact-social-links" />
+      </div>
     </div>
   );
 };

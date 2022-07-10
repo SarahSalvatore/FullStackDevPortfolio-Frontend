@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import loginValidation from "../Helpers/loginValidation";
 
 const useLogin = (submitForm) => {
@@ -42,6 +42,7 @@ const useLogin = (submitForm) => {
     handleLoginSubmission,
     loginValue,
     loginErrors,
+    entries,
   };
 };
 

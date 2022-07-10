@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import AnchorButton from "./AnchorButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDisplay, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const animationVariant = {

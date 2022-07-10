@@ -6,7 +6,7 @@ import Skills from "../Components/Skills";
 import Projects from "../Components/Projects";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-import lighthero from "../Assets/Images/herobannerday.jpg";
+import lighthero from "../Assets/Images/option6.jpg";
 import darkhero from "../Assets/Images/herobannernight.jpg";
 
 export const ThemeContext = createContext(null);
