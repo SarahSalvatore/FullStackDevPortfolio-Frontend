@@ -8,12 +8,12 @@ const animationVariant = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 1.6 },
+    transition: { duration: 1.4 },
   },
   hidden: {
     x: -200,
     opacity: 0,
-    transition: { duration: 1.6 },
+    transition: { duration: 1.4 },
   },
 };
 

@@ -253,7 +253,7 @@ nav {
   margin: 0 auto;
   overflow: hidden;
   padding-top: 3rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .hero__text {
@@ -374,7 +374,7 @@ button {
 
 @-webkit-keyframes bounce {
   to {
-    -webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.3);
   }
 }
 @-moz-keyframes bounce {
@@ -384,7 +384,7 @@ button {
 }
 @keyframes bounce {
   to {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
 }
 

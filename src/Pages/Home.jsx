@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <ThemeContext.Provider value={(theme, toggleTheme)}>
-      <div id={theme}>
+      <div className="body-div" id={theme}>
         <header>
           <Navbar
             onToggleChange={toggleTheme}
