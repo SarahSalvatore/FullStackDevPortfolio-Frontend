@@ -26,6 +26,17 @@ html {
   scroll-padding-top: 110px;
 }
 
+/* Custom Scrollbar */
+
+html::-webkit-scrollbar {
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--periwinkle);
+  border-radius: 100px;
+}
+
 /* LIGHT AND DARK TOGGLE THEME */
 
 #light {
