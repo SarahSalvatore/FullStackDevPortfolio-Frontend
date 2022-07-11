@@ -22,42 +22,49 @@ const Skills = () => {
           title="HTML"
         />
         <img className="skill-logo" src={cssLogo} alt="CSS Icon" title="CSS" />
+
         <img
           className="skill-logo"
           src={javascriptLogo}
           alt="JavaScript Icon"
           title="JavaScript"
         />
+
         <img
           className="skill-logo"
           src={reactLogo}
           alt="React Icon"
           title="React"
         />
+
         <img
           className="skill-logo"
           src={nodeLogo}
           alt="Node.js Icon"
           title="Node"
         />
+
         <img
           className="skill-logo"
           src={mongoLogo}
           alt="MongoDB Icon"
           title="MongoDB"
         />
+
         <img
           className="skill-logo"
           src={expressLogo}
           alt="Express Icon"
           title="Express"
         />
+
         <img
           className="skill-logo"
           src={mySqlLogo}
           alt="MySQL Icon"
           title="MySQL"
         />
+
         <img className="skill-logo" src={gitLogo} alt="Git Icon" title="Git" />
       </div>
     </div>

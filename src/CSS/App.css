@@ -177,39 +177,37 @@ nav {
   text-align: right;
 }
 
+.nav-links .nav-item:hover {
+  color: lightskyblue;
+}
+
 .nav-links .nav-item {
   color: var(--white);
   font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   list-style: none;
-  padding: 0.8px 20px;
+  padding: 0.8px 20px 1rem;
+  position: relative;
   text-decoration: none;
   transition: 0.6s;
 }
 
-#home-nav:hover {
+.nav-item::after {
+  content: "";
   color: lightskyblue;
+  position: absolute;
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  transition: 0.6s;
 }
 
-#about-nav:hover {
-  color: plum;
-}
-
-#projects-nav:hover {
-  color: peru;
-}
-
-#blog-nav:hover {
-  color: mediumvioletred;
-}
-
-#contact-nav:hover {
-  color: yellowgreen;
-}
-
-#login-nav:hover {
-  color: tomato;
+.nav-item:hover::after {
+  background-color: lightskyblue;
+  transform: scale(1, 1);
 }
 
 .hamburger-button {
@@ -357,13 +355,13 @@ button {
   background-color: var(--dark-blue);
   border: none;
   border-radius: 6px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   color: var(--white);
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   margin-top: 2.7rem;
   padding: 1.2rem 3rem;
-  transition: 0.6s;
+  transition: 1s;
 }
 
 #light .hero-button {
@@ -371,32 +369,15 @@ button {
 }
 
 #dark .hero-button {
-  background-color: var(--blue-black);
+  background-color: var(--mid-blue-accent);
 }
 
-.hero-button:hover {
-  color: tomato;
+#light .hero-button:hover {
+  background-color: var(--bright-blue);
 }
 
-.hero-button:hover .button-icon {
-  color: tomato;
-  animation: bounce 1s ease-in-out infinite;
-}
-
-@-webkit-keyframes bounce {
-  to {
-    -webkit-transform: scale(1.3);
-  }
-}
-@-moz-keyframes bounce {
-  to {
-    -moz-transform: scale(1.3);
-  }
-}
-@keyframes bounce {
-  to {
-    transform: scale(1.3);
-  }
+#dark .hero-button:hover {
+  background-color: var(--bright-blue);
 }
 
 /* about section buttons */

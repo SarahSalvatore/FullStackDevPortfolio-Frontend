@@ -1,6 +1,6 @@
 # The Full Stack Dev Portfolio of Sarah Salvatore
 
-Hello! Thank you for your interest in my portfolio. Please continue reading below for more details on the project.
+Hello! Welcome to my Frontend Portfolio ReadMe. Thank you for your interest in this project. Please continue reading for more details:
 
 ## Table of Contents
 
@@ -13,20 +13,32 @@ Hello! Thank you for your interest in my portfolio. Please continue reading belo
 
 ## About
 
-This project was created to convey my full stack development skills to potential employers, colleagues and clients. My portfolio includes the following sections:
+I created this portfolio to showcase my programming skills to potential employers, colleagues and clients. The website includes the following pages/sections:
+
+### Home Page
 
 - About - Includes resume download and social links.
 - Skills - List of language, framework and technology proficiencies.
 - Projects - Some of the projects I have built to date.
-- Blog - Articles I have written that are geared to help newbie developers like me.
 - Contact - To get in touch.
-- Login - Protected route.
-- Error - Error page.
+
+### Blog Page
+
+- Articles I have written that are geared to help newbie developers like me.
+
+### Login Page
+
+- Protected route. For internal use only.
+
+### Error Page
+
+- Default error page.
 
 ## Stack
 
-- Frontend: HTML, CSS, React, JSX, Javascript
-- Backend: Node.js
+- Frontend: HTML, CSS, React, Javascript
+- Backend: Node, Express
+- Server: MySQL
 
 ## Installation
 
@@ -41,7 +53,7 @@ In Backend folder:
 
 ## Contributions
 
-Contributions and forks are always welcome! If you have a suggestion that would make my portfolio better, please feel free to fork the repo and create a pull request. Don't forget to give the project a star on GitHub!
+Contributions and forks are always welcome! If you have a suggestion that would make my portfolio better, please feel free to fork the repo and create a pull request, or simply send me an email with your suggestions. Don't forget to give this project a star on GitHub!
 
 ## Contact
 
@@ -56,4 +68,3 @@ Please find my contact details below. Feel free to reach out anytime and I will 
 - Unsplash [https://unsplash.com/](https://unsplash.com/)
 - Font Awesome Icons [https://fontawesome.com/icons](https://fontawesome.com/icons)
 - Google Fonts [https://fonts.google.com/](https://fonts.google.com/)
-- York University [https://www.yorku.ca/](https://www.yorku.ca/)
