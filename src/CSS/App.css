@@ -772,6 +772,10 @@ footer {
   transition: 0.5s;
 }
 
+.footer-link:hover {
+  color: lightskyblue;
+}
+
 .footer-social-icons {
   color: var(--white);
   height: 22px;
