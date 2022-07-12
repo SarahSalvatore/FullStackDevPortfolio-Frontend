@@ -32,6 +32,15 @@ const NavLinks = (props) => {
         Projects
       </HashLink>
 
+      <HashLink
+        to="#contact"
+        className={props.className}
+        id="contact-nav"
+        onClick={props.onClick}
+      >
+        Contact
+      </HashLink>
+
       <Link
         to="/blog"
         target="_blank"
@@ -41,15 +50,6 @@ const NavLinks = (props) => {
       >
         Blog
       </Link>
-
-      <HashLink
-        to="#contact"
-        className={props.className}
-        id="contact-nav"
-        onClick={props.onClick}
-      >
-        Contact
-      </HashLink>
 
       <Link
         to="/login"

@@ -72,6 +72,30 @@ h4 {
   color: var(--periwinkle);
 }
 
+.sm-section-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#light .sm-section-header {
+  color: var(--gray-text);
+}
+
+#dark .sm-section-header {
+  color: var(--white);
+}
+
+#light .section-title {
+  color: var(--mid-blue-accent);
+}
+
+#dark .section-title {
+  color: lightskyblue;
+}
+
 p,
 label {
   font-size: 1.7rem;
@@ -304,7 +328,9 @@ nav {
 }
 
 .hero-image-container {
+  margin-top: 4rem;
   width: 40%;
+  vertical-align: middle;
 }
 
 /* hero clouds */
@@ -315,31 +341,74 @@ nav {
 .node-cloud,
 .react-cloud,
 .git-cloud {
-  opacity: 0.7;
+  opacity: 0.8;
+  margin-bottom: 2rem;
 }
 
 .html-cloud {
   width: 150px;
+  animation: float3 10s ease-in-out infinite;
 }
 
 .css-cloud {
   width: 130px;
+  animation: float2 8s ease-in-out infinite;
 }
 
 .git-cloud {
   width: 130px;
+  animation: float1 6s ease-in-out infinite;
 }
 
 .js-cloud {
   width: 300px;
+  animation: float1 7s ease-in-out infinite;
 }
 
 .node-cloud {
   width: 240px;
+  animation: float1 7s ease-in-out infinite;
 }
 
 .react-cloud {
   width: 210px;
+  animation: float2 4s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-40px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 /* BUTTONS */
@@ -454,18 +523,12 @@ button {
 /* contact section buttons */
 
 #form .dark-blue-button {
+  background-color: var(--blue-black);
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 4rem;
+  text-align: left;
   width: 180px;
-}
-
-#light .section-title {
-  color: var(--mid-blue-accent);
-}
-
-#dark .section-title {
-  color: var(--periwinkle);
 }
 
 /* ABOUT ME SECTION */
@@ -479,22 +542,6 @@ button {
 .about__container {
   display: flex;
   padding: 6rem 0;
-}
-
-.sm-section-header {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-}
-
-#light .sm-section-header {
-  color: var(--gray-text);
-}
-
-#dark .sm-section-header {
-  color: var(--white);
 }
 
 .profile__image {
@@ -630,6 +677,10 @@ hr {
   background-color: var(--gray-background);
 }
 
+#dark .contact__section {
+  background-color: var(--mid-blue-accent);
+}
+
 .contact__container {
   width: 65%;
   margin: 5rem auto 0;
@@ -637,7 +688,7 @@ hr {
 }
 
 .form-container {
-  background-color: var(--mid-blue-accent);
+  background-color: var(--blue-black);
   display: flex;
   margin: 0 auto;
   width: 100%;
@@ -710,6 +761,8 @@ hr {
 }
 
 .input-label {
+  color: var(--blue-black);
+  font-size: 1.6rem;
   display: inline-block;
   margin-bottom: 1rem;
 }
