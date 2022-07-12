@@ -341,13 +341,22 @@ nav {
 .node-cloud,
 .react-cloud,
 .git-cloud {
-  opacity: 0.8;
+  opacity: 0.7;
   margin-bottom: 2rem;
 }
 
 .html-cloud {
   width: 150px;
   animation: float3 10s ease-in-out infinite;
+}
+
+.html-cloud:hover,
+.css-cloud:hover,
+.js-cloud:hover,
+.node-cloud:hover,
+.react-cloud:hover,
+.git-cloud:hover {
+  animation: tilt 0.6s infinite;
 }
 
 .css-cloud {
@@ -431,6 +440,7 @@ button {
   margin-top: 2.7rem;
   padding: 1.2rem 3rem;
   transition: 1s;
+  animation: float2 4s ease-in-out infinite;
 }
 
 #light .hero-button {
