@@ -340,26 +340,27 @@ nav {
 
 .html-cloud {
   width: 150px;
-  animation: float3 11s ease-in-out infinite;
+  animation: float2 11s ease-in-out infinite;
 }
 
-/* .html-cloud:hover,
+.html-cloud:hover,
 .css-cloud:hover,
 .js-cloud:hover,
 .node-cloud:hover,
 .react-cloud:hover,
 .git-cloud:hover {
-  animation: tilt 0.6s infinite;
-} */
+  animation-play-state: paused;
+  transition: animation-duration 300ms;
+}
 
 .css-cloud {
   width: 130px;
-  animation: float3 10s ease-in-out infinite;
+  animation: float2 10s ease-in-out infinite;
 }
 
 .git-cloud {
   width: 130px;
-  animation: float3 13s ease-in-out infinite;
+  animation: float2 13s ease-in-out infinite;
 }
 
 .js-cloud {
@@ -370,12 +371,12 @@ nav {
 
 .node-cloud {
   width: 240px;
-  animation: float1 13s ease-in-out infinite;
+  animation: float1 11s ease-in-out infinite;
 }
 
 .react-cloud {
   width: 210px;
-  animation: float3 14s ease-in-out infinite;
+  animation: float2 12s ease-in-out infinite;
 }
 
 @keyframes float1 {
@@ -391,33 +392,12 @@ nav {
   0% {
     transform: translatey(500px);
   }
-  30% {
-    transform: translatey(-10px);
-  }
   100% {
     transform: translatey(-500px);
   }
 }
 
 @keyframes float3 {
-  0% {
-    transform: translatey(500px);
-  }
-  100% {
-    transform: translatey(-500px);
-  }
-}
-
-@keyframes float4 {
-  0% {
-    transform: translatey(500px);
-  }
-  100% {
-    transform: translatey(-500px);
-  }
-}
-
-@keyframes float5 {
   0% {
     transform: translatey(0px);
   }
@@ -449,7 +429,7 @@ button {
   margin-top: 2.7rem;
   padding: 1.2rem 3rem;
   transition: 1s;
-  animation: float5 4s ease-in-out infinite;
+  animation: float3 4s ease-in-out infinite;
 }
 
 #light .hero-button {
