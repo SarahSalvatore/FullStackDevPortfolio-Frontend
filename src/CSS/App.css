@@ -123,7 +123,7 @@ textarea {
 nav {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 
 /* small nav */
@@ -164,22 +164,6 @@ nav {
   cursor: pointer;
   width: 80px;
   margin: 0.5rem 0 0.5rem 2rem;
-}
-
-.logo:hover {
-  animation-name: spin;
-  animation-duration: 2000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .navbar {
@@ -295,6 +279,7 @@ nav {
   text-align: left;
   width: 30%;
   max-height: 40%;
+  z-index: 2;
 }
 
 .hello-text {
@@ -328,9 +313,14 @@ nav {
 }
 
 .hero-image-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 4rem;
-  width: 40%;
+  width: 50%;
   vertical-align: middle;
+  z-index: 1;
 }
 
 /* hero clouds */
@@ -341,79 +331,98 @@ nav {
 .node-cloud,
 .react-cloud,
 .git-cloud {
-  opacity: 0.7;
+  align-self: center;
+  cursor: pointer;
+  opacity: 0.8;
   margin-bottom: 2rem;
+  margin-right: 1rem;
 }
 
 .html-cloud {
   width: 150px;
-  animation: float3 10s ease-in-out infinite;
+  animation: float3 11s ease-in-out infinite;
 }
 
-.html-cloud:hover,
+/* .html-cloud:hover,
 .css-cloud:hover,
 .js-cloud:hover,
 .node-cloud:hover,
 .react-cloud:hover,
 .git-cloud:hover {
   animation: tilt 0.6s infinite;
-}
+} */
 
 .css-cloud {
   width: 130px;
-  animation: float2 8s ease-in-out infinite;
+  animation: float3 10s ease-in-out infinite;
 }
 
 .git-cloud {
   width: 130px;
-  animation: float1 6s ease-in-out infinite;
+  animation: float3 13s ease-in-out infinite;
 }
 
 .js-cloud {
   width: 300px;
-  animation: float1 7s ease-in-out infinite;
+  animation: float1 14s ease-in-out infinite;
+  animation-delay: 0.2s;
 }
 
 .node-cloud {
   width: 240px;
-  animation: float1 7s ease-in-out infinite;
+  animation: float1 13s ease-in-out infinite;
 }
 
 .react-cloud {
   width: 210px;
-  animation: float2 4s ease-in-out infinite;
+  animation: float3 14s ease-in-out infinite;
 }
 
 @keyframes float1 {
   0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(-20px);
+    transform: scale(1, 1) translatey(500px);
   }
   100% {
-    transform: translatey(0px);
+    transform: scale(1.5, 1.5) translatey(-500px);
   }
 }
 
 @keyframes float2 {
   0% {
-    transform: translatey(0px);
+    transform: translatey(500px);
   }
-  50% {
+  30% {
     transform: translatey(-10px);
   }
   100% {
-    transform: translatey(0px);
+    transform: translatey(-500px);
   }
 }
 
 @keyframes float3 {
   0% {
+    transform: translatey(500px);
+  }
+  100% {
+    transform: translatey(-500px);
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translatey(500px);
+  }
+  100% {
+    transform: translatey(-500px);
+  }
+}
+
+@keyframes float5 {
+  0% {
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-40px);
+    transform: translatey(-10px);
   }
   100% {
     transform: translatey(0px);
@@ -440,7 +449,7 @@ button {
   margin-top: 2.7rem;
   padding: 1.2rem 3rem;
   transition: 1s;
-  animation: float2 4s ease-in-out infinite;
+  animation: float5 4s ease-in-out infinite;
 }
 
 #light .hero-button {
@@ -451,10 +460,7 @@ button {
   background-color: var(--mid-blue-accent);
 }
 
-#light .hero-button:hover {
-  background-color: var(--bright-blue);
-}
-
+#light .hero-button:hover,
 #dark .hero-button:hover {
   background-color: var(--bright-blue);
 }
@@ -522,7 +528,7 @@ button {
 
 .dark-blue-button:hover,
 .dark-blue-button:focus {
-  box-shadow: inset 0 -3.8em 0 0 purple;
+  box-shadow: inset 0 -3.8em 0 0 var(--periwinkle);
 }
 
 .button-icon {
