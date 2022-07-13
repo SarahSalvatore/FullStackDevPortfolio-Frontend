@@ -287,15 +287,15 @@ nav {
 .blimp {
   width: 225px;
   padding-top: 2rem;
-  animation: flying-objects 15s ease-in-out infinite;
+  animation: flying-objects 28s ease-in-out infinite;
 }
 
 @keyframes flying-objects {
   0% {
-    transform: translatex(-500px);
+    transform: translatex(-100vw);
   }
   100% {
-    transform: translatex(2500px);
+    transform: translatex(150vw);
   }
 }
 
@@ -357,7 +357,6 @@ nav {
 .react-cloud,
 .git-cloud {
   align-self: center;
-  cursor: pointer;
   opacity: 0.8;
   margin-bottom: 2rem;
   margin-right: 1rem;
@@ -391,7 +390,7 @@ nav {
 
 .react-cloud {
   width: 210px;
-  animation: cloud-float-2 12s ease-in-out infinite;
+  animation: cloud-float-2 18s ease-in-out infinite;
 }
 
 @keyframes cloud-float-1 {
