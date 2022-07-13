@@ -292,7 +292,7 @@ nav {
 
 @keyframes flying-objects {
   0% {
-    transform: translatex(-100vw);
+    transform: translatex(-20vw);
   }
   100% {
     transform: translatex(150vw);
