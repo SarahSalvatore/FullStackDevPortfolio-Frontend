@@ -541,6 +541,31 @@ button {
   width: 180px;
 }
 
+/* login page button */
+
+.login-button {
+  background-color: var(--mid-blue-accent);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--white);
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+  padding: 1.2rem 4rem;
+  width: 140px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.6s;
+}
+
+.login-button:hover {
+  background-color: var(--bright-blue);
+}
+
 /* ABOUT SECTION */
 
 .about__section {
@@ -832,6 +857,16 @@ hr {
   margin: 0 auto;
   padding: 5rem 2rem;
   width: 100%;
+}
+
+/* Entries Page */
+
+.entries-container {
+  background-color: var(--white);
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  width: 80%;
 }
 
 /* FOOTER SECTION */

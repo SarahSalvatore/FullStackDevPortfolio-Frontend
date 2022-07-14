@@ -43,7 +43,7 @@ const LoginForm = ({ submitForm }) => {
             )}
           </div>
           <button
-            className="submit-button"
+            className="login-button"
             type="submit"
             onClick={handleLoginSubmission}
           >
