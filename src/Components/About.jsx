@@ -26,13 +26,17 @@ const About = () => {
             Ontario. If you're looking for a creative and passionate developer,
             then you've come to the right place!
           </p>
-          <p className="about-paragraph">
+          <p>
             I studied Full Stack Development at York University with a focus on
             the MERN stack. Before that, I graduated from George Brown College
-            for Graphic Design. I consider myself a forever student, eager to
-            build on my foundational knowledge, hone my skills, and continue
-            learning new languages and frameworks. Below you can learn more
-            about me, see samples of my work or get in touch.
+            for Graphic Design. I would consider myself a forever student, eager
+            to build on my foundational knowledge, hone my skills and continue
+            learning new languages and frameworks.
+          </p>
+          <p className="about-paragraph">
+            On a personal note, I love horror movies, lattes, history, and
+            pineapple on pizza. Below you can learn more about me, see samples
+            of my work or get in touch.
           </p>
 
           <Link
