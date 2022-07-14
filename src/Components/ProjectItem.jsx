@@ -8,18 +8,18 @@ const animationVariant = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 1.4 },
+    transition: { duration: 1.3 },
   },
   hidden: {
     x: -200,
     opacity: 0,
-    transition: { duration: 1.4 },
+    transition: { duration: 1.3 },
   },
 };
 
 const ProjectItem = (props) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.5 });
+  const [ref, inView] = useInView({ threshold: 0.3 });
 
   useEffect(() => {
     if (inView) {
@@ -46,12 +46,14 @@ const ProjectItem = (props) => {
           className="med-blue-button"
           name="Demo"
           icon={faDisplay}
+          title="Demo"
         />
         <AnchorButton
           href={props.codeHref}
           className="dark-blue-button"
           name="Code"
           icon={faCode}
+          title="Repo"
         />
       </div>
     </motion.article>

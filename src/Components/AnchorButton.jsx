@@ -7,7 +7,7 @@ const AnchorButton = (props) => {
       <FontAwesomeIcon
         icon={props.icon}
         className="button-icon"
-        title="Email Me"
+        title={props.title}
       />
       {props.name}
     </a>

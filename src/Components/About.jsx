@@ -30,8 +30,8 @@ const About = () => {
             I studied Full Stack Development at York University with a focus on
             the MERN stack. Before that, I graduated from George Brown College
             for Graphic Design. I would consider myself a forever student, eager
-            to build on my foundational knowledge, hone my skills and continue
-            learning new languages and frameworks.
+            to build on my foundational programming knowledge, hone my skills
+            and continue learning new languages and frameworks.
           </p>
           <p className="about-paragraph">
             On a personal note, I love horror movies, lattes, history, and
@@ -48,7 +48,7 @@ const About = () => {
             <FontAwesomeIcon
               icon={faArrowDown}
               className="button-icon"
-              title="Email Me"
+              title="Download CV"
             />
             Download CV
           </Link>
@@ -57,12 +57,14 @@ const About = () => {
             className="med-blue-button"
             name="LinkedIn"
             icon={faLinkedin}
+            title="LinkedIn"
           />
           <AnchorButton
             href="https://github.com/SarahSalvatore"
             className="dark-blue-button"
             name="GitHub"
             icon={faGithub}
+            title="GitHub"
           />
         </div>
       </div>

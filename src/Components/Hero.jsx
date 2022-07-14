@@ -17,11 +17,11 @@ const animationVariant = {
   visible: {
     x: 0,
 
-    transition: { duration: 1.4 },
+    transition: { duration: 1.3 },
   },
   hidden: {
     x: -200,
-    transition: { duration: 1.4 },
+    transition: { duration: 1.3 },
   },
 };
 
