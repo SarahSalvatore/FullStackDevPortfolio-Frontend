@@ -28,7 +28,7 @@ const useForm = (submitForm) => {
       submitForm(true);
 
       const body = { formValue };
-      fetch("http://localhost:5000/contact_form/entries", {
+      fetch("http://localhost:4000/entries", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

@@ -824,6 +824,16 @@ hr {
   padding: 0 1rem;
 }
 
+/* Thank You Message */
+
+.thank-you-container {
+  background-color: var(--white);
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+
 /* FOOTER SECTION */
 
 footer {

@@ -4,7 +4,7 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 const ThankYouFormSubmission = () => {
   return (
-    <div className="form-container">
+    <div className="thank-you-container">
       <div className="checkbox-container">
         <FontAwesomeIcon
           icon={faCircleCheck}

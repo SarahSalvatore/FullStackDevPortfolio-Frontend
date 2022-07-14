@@ -4,10 +4,8 @@ import EntryItem from "./EntryItem";
 const Entries = () => {
   const [entries, setEntries] = useState();
 
-  const contactFormEntries = [entries];
-
   useEffect(() => {
-    fetch("/contact_form/entries")
+    fetch("http://localhost:4000/entries")
       .then((res) => {
         return res.json();
       })
@@ -20,15 +18,14 @@ const Entries = () => {
     <div className="form-container">
       <h2 className="page-header-title">Contact Form Entries</h2>
       <div className="projects-map">
-        {contactFormEntries &&
-          contactFormEntries.map((entry) => {
-            const val = Object.values(entry)[1];
+        {entries &&
+          entries.map((entries) => {
             return (
               <EntryItem
-                id={entry.id}
-                name={val.name}
-                email={val.email}
-                message={val.message}
+                id={entries.id}
+                name={entries.name}
+                email={entries.email}
+                message={entries.message}
               />
             );
           })}
