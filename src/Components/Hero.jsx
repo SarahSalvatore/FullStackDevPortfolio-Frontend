@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import blimp from "../Assets/Images/blimp.png";
@@ -11,7 +13,28 @@ import reactCloud from "../Assets/Images/react-cloud.png";
 import gitCloud from "../Assets/Images/git-cloud.png";
 import "../CSS/App.css";
 
+const animationVariant = {
+  visible: {
+    x: 0,
+
+    transition: { duration: 1.4 },
+  },
+  hidden: {
+    x: -200,
+    transition: { duration: 1.4 },
+  },
+};
+
 const Hero = (props) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.5 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <section
       className="hero__container"
@@ -21,7 +44,13 @@ const Hero = (props) => {
         <img className="blimp" src={blimp} alt="Flying Blimp" />
       </div>
       <div className="text-cloud-container">
-        <div className="hero__text">
+        <motion.div
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          variants={animationVariant}
+          className="hero__text"
+        >
           <h3 className="hello-text">Hello, I'm</h3>
           <h1 className="my-name-text">Sarah Salvatore</h1>
           <h2 className="my-title-text">Full Stack Developer</h2>
@@ -31,7 +60,7 @@ const Hero = (props) => {
               LEARN MORE
             </button>
           </HashLink>
-        </div>
+        </motion.div>
         <div className="hero-image-container">
           <img className="html-cloud" src={htmlCloud} alt="HTML5 Cloud" />
           <img className="css-cloud" src={cssCloud} alt="CSS3 Cloud" />
