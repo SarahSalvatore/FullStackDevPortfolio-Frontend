@@ -5,6 +5,7 @@ Hello! Welcome to my Frontend Portfolio ReadMe. Thank you for your interest in t
 ## Table of Contents
 
 - [About the Project](#About)
+- [Front End](#frontend)
 - [Stack Used](#Stack)
 - [Installation](#Installation)
 - [Contributions](#Contributions)
@@ -13,7 +14,11 @@ Hello! Welcome to my Frontend Portfolio ReadMe. Thank you for your interest in t
 
 ## About
 
-I created this portfolio to showcase my programming skills to potential employers, colleagues and clients. The website includes the following pages/sections:
+I created this portfolio to showcase my programming skills to potential employers, colleagues and clients. This portfolio consists of three repos: Frontend (You are here), Backend [https://github.com/SarahSalvatore/FullStackDevPortfolio-Backend](https://github.com/SarahSalvatore/FullStackDevPortfolio-Backend) and Database (coming soon).
+
+## Frontend
+
+The frontend website includes the following pages/sections:
 
 ### Home Page
 
