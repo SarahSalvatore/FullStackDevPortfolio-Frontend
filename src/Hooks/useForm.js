@@ -10,12 +10,6 @@ const useForm = (submitForm) => {
   const [formErrors, setFormErrors] = useState({});
   const [successForm, setSuccessForm] = useState(false);
 
-  const handleFormSubmission = (event) => {
-    event.preventDefault();
-    setFormErrors(formValidation(formValue));
-    setSuccessForm(true);
-  };
-
   const handleFormChange = (event) => {
     setFormValue({
       ...formValue,
@@ -23,15 +17,21 @@ const useForm = (submitForm) => {
     });
   };
 
+  const handleFormSubmission = (event) => {
+    event.preventDefault();
+    setFormErrors(formValidation(formValue));
+    setSuccessForm(true);
+  };
+
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && successForm) {
       submitForm(true);
 
-      const body = { formValue };
+      const reqBody = { formValue };
       fetch("http://localhost:4000/entries", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
+        // headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(reqBody),
       }).then(() => {
         console.log("New contact form entry added.");
       });
