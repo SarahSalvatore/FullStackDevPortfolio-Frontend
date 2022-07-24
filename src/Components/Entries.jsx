@@ -17,7 +17,7 @@ const Entries = () => {
   return (
     <div className="entries-container">
       <h2 className="page-header-title">Contact Form Entries</h2>
-      <div className="projects-map">
+      <div className="entries-map">
         {entries &&
           entries.map((entry) => {
             return (
