@@ -19,13 +19,13 @@ const Entries = () => {
       <h2 className="page-header-title">Contact Form Entries</h2>
       <div className="projects-map">
         {entries &&
-          entries.map((entries) => {
+          entries.map((entry) => {
             return (
               <EntryItem
-                id={entries.id}
-                name={entries.name}
-                email={entries.email}
-                message={entries.message}
+                id={entry.id}
+                name={entry.name}
+                email={entry.email}
+                message={entry.message}
               />
             );
           })}

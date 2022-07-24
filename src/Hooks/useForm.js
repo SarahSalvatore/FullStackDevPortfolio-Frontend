@@ -27,14 +27,15 @@ const useForm = (submitForm) => {
     if (Object.keys(formErrors).length === 0 && successForm) {
       submitForm(true);
 
-      const reqBody = { formValue };
       fetch("http://localhost:4000/entries", {
         method: "POST",
         // headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(reqBody),
-      }).then(() => {
-        console.log("New contact form entry added.");
-      });
+        body: JSON.stringify(formValue),
+      })
+        .then((res) => res.json())
+        .then(() => {
+          console.log(formValue);
+        });
     }
   }, [formErrors]);
 
