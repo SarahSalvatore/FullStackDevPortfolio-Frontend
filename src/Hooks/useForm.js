@@ -31,11 +31,7 @@ const useForm = (submitForm) => {
         method: "POST",
         // headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formValue),
-      })
-        .then((res) => res.json())
-        .then(() => {
-          console.log(formValue);
-        });
+      }).then((res) => res.json());
     }
   }, [formErrors]);
 

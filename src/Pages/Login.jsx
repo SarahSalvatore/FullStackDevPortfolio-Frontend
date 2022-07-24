@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import loginbackground from "../Assets/Images/loginbackground.jpg";
 import LoginForm from "../Components/LoginForm";
 import Entries from "../Components/Entries";
 
@@ -11,10 +10,7 @@ const Login = () => {
   };
 
   return (
-    <section
-      className="login-section"
-      style={{ backgroundImage: `url('${loginbackground}')` }}
-    >
+    <section className="login-section">
       {!loginSubmission ? <LoginForm submitForm={submitForm} /> : <Entries />}
     </section>
   );

@@ -918,7 +918,10 @@ footer {
 
 /* LOGIN PAGE */
 
-.login-section,
+.login-section {
+  width: 100%;
+}
+
 .blog-container {
   background-attachment: fixed;
   background-position: center;
