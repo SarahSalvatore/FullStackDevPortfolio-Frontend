@@ -34,7 +34,7 @@ const About = () => {
             and continue learning new languages and frameworks.
           </p>
           <p className="about-paragraph">
-            On a personal note, I love horror movies, lattes, history, and
+            On a personal note, I love horror movies, history, coffee and
             pineapple on pizza. Below you can learn more about me, see samples
             of my work or get in touch.
           </p>

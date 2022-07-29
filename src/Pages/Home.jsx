@@ -7,7 +7,7 @@ import Projects from "../Components/Projects";
 import MoreProjects from "../Components/MoreProjects";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
-import lighthero from "../Assets/Images/option9.jpg";
+import lighthero from "../Assets/Images/try.jpg";
 import darkhero from "../Assets/Images/herobannernight.jpg";
 
 export const ThemeContext = createContext(null);

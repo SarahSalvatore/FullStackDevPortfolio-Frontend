@@ -8,6 +8,7 @@
 :root {
   --white: white;
   --black: black;
+  --red: #d61c4e;
   --periwinkle: #9cc1e8;
   --bright-blue: #0288d1;
   --light-blue: lightskyblue;
@@ -130,8 +131,9 @@ nav {
 
 /* small nav */
 
-#light .small-nav {
-  background-color: var(--bright-blue);
+#light .small-nav,
+.skills-background {
+  background-color: #d61c4e;
 }
 
 #dark .small-nav {
@@ -264,6 +266,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
@@ -300,23 +303,25 @@ nav {
 }
 
 .hero__text {
-  margin-left: 3rem;
+  align-self: center;
+  justify-self: center;
+  margin: 0 auto;
+  padding-left: 2rem;
   text-align: left;
-  width: 30%;
-  max-height: 45%;
+  width: 60%;
   z-index: 2;
 }
 
 .hello-text {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.2rem;
 }
 
 .my-name-text {
-  font-size: 5rem;
-  font-weight: 700;
-  margin-bottom: 1.8rem;
+  font-size: 7rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
 }
 
 .my-title-text {
@@ -328,7 +333,8 @@ nav {
 #light .my-name-text,
 #light .my-title-text,
 #light .hello-text {
-  color: var(--blue-black);
+  color: var(--white);
+  opacity: 0.9;
 }
 
 #dark .my-name-text,
@@ -602,7 +608,6 @@ button {
 /* SKILLS SECTION */
 
 .skills-background {
-  background-color: var(--mid-blue-accent);
   margin: 4rem 0 4rem;
   padding-bottom: 7rem;
   padding-top: 5rem;
