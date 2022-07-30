@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink } from "react-router-hash-link";
 import NavLinks from "./NavbarLinks";
 import SocialLinks from "./SocialLinks";
-import logo from "../Assets/Images/logo.png";
+import logo from "../Assets/Images/s-logo.png";
 
 const Footer = () => {
   return (

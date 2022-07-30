@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import "../CSS/App.css";
 
 const animationVariant = {
@@ -40,14 +38,10 @@ const Hero = (props) => {
         variants={animationVariant}
         className="hero__text"
       >
-        <h3 className="hello-text">Hello, I'm</h3>
-        <h1 className="my-name-text">Sarah Salvatore</h1>
-        <h2 className="my-title-text">FULL STACK DEVELOPER</h2>
+        <h1 className="my-name-text">SARAH SALVATORE</h1>
+        <h2 className="my-title-text">Full Stack Developer</h2>
         <HashLink to="#about">
-          <button className="hero-button">
-            <FontAwesomeIcon icon={faAngleDown} className="button-icon" />
-            LEARN MORE
-          </button>
+          <button className="hero-button">LEARN MORE</button>
         </HashLink>
       </motion.div>
     </section>

@@ -29,9 +29,10 @@ const About = () => {
           <p>
             I studied Full Stack Development at York University with a focus on
             the MERN stack. Before that, I graduated from George Brown College
-            for Graphic Design. I would consider myself a forever student, eager
-            to build on my foundational programming knowledge, hone my skills
-            and continue learning new languages and frameworks.
+            for Graphic Communications and Design. I would consider myself a
+            forever student, eager to build on my foundational programming
+            knowledge, hone my skills and continue learning new languages and
+            frameworks.
           </p>
           <p className="about-paragraph">
             On a personal note, I love horror movies, history, coffee and
