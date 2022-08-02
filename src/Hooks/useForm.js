@@ -29,7 +29,7 @@ const useForm = (submitForm) => {
 
       fetch("http://localhost:4000/entries", {
         method: "POST",
-        // headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formValue),
       }).then((res) => res.json());
     }
